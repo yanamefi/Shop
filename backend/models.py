@@ -1,10 +1,14 @@
-from pydantic import BaseModel
+# models.py
 
+from datetime import datetime
+from pydantic import BaseModel
+from typing import List
 
 class Products(BaseModel):
     id: int
-    post_date: str
-    name: str
+    post_date: datetime
+    pr_name: str
     photo: str
     description: str
-
+    price: float
+    photo_name: str
