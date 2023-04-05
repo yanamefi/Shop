@@ -10,3 +10,4 @@ async def home_page():
             Products(id=prods[0], post_date=prods[1], pr_name=prods[2], description=prods[3], price=prods[4],
                      photo=prods[5], photo_name=prods[6]))
     conn.commit()
+    return formatted_photos
